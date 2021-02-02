@@ -1,4 +1,5 @@
 obj-m := helloworld.o
+obj-m += modexport.o moddep.o
 
 .PHONY: default
 default: build
