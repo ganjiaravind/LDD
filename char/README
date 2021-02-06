@@ -10,6 +10,9 @@ step 3: check cat /proc/devices for the device your registered
 step 4: Look at major number assigned by kernel
 
 step 5: create a inode for newly registered char dev using mknod
+	mknod /dev/<dev name> c <Major number> <Minor number>
+
+	example:-
 	mknod /dev/LLD_Cdev c 239 0
 
 step 6: Take help of test.c application for working on char dev
