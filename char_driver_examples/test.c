@@ -4,7 +4,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 
-#define DEV_NAME	"/dev/LLD_Cdev"
+#define DEV_NAME	"/dev/gstatic"
 int main()
 {
 	int fd;

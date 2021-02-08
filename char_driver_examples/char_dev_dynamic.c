@@ -49,7 +49,7 @@ static int __init char_dyn_init(void)
 {
 	int rc = 0;
 	int start_minor = 0;
-	rc = alloc_chrdev_region(&lld_dev, start_minor, count, "LLD_Cdev");
+	rc = alloc_chrdev_region(&lld_dev, start_minor, count, "DLLD_Cdev");
 	if (rc < 0) {
 		pr_err("%s: could not allocate major number\n", __func__);
 		return rc;

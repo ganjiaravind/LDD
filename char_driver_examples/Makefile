@@ -1,4 +1,4 @@
-obj-m := char_dev_dynamic.o
+obj-m := char_dev_dynamic.o char_dev_static.o
 
 .PHONY: default
 default: build
