@@ -9,7 +9,7 @@ static void *kptr;
 
 int  init_module(void)
 {
-	pages = alloc_pages(GFP_KERNEL, 2);
+	pages = alloc_pages(__GFP_HIGHMEM, 2);
 	if (!pages) {
 		pr_err("unable to allocate requested pages\n");
 		return ENOMEM;
