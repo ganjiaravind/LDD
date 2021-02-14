@@ -1,4 +1,4 @@
-obj-m := page_example.o kmalloc.o vmalloc.o
+obj-m := page_example.o kmalloc.o vmalloc.o kmem_cache.o high_mem.o
 
 .PHONY: default
 default: build
