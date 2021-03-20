@@ -1,4 +1,4 @@
-obj-m := mutex_example.o spin_example.o
+obj-m := mutex_example.o spin_example.o completion_example.o
 
 .PHONY: default
 default: build
